@@ -203,6 +203,7 @@ body {
   transform: translateY(-2px);
 }
 
+
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
@@ -212,4 +213,7 @@ body {
   font-size: var(--fontSizeLg);
   font-family: 'Times New Roman', Times, serif;
   
+}
+.list{
+  color: #3B3B3B;
 }
