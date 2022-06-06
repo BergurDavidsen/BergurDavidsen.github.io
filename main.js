@@ -2538,7 +2538,7 @@ function findItem2(element){
             }
             let navn = finalNavn.join(" ")
                
-            document.getElementById('result').innerHTML += navn + " hevur føðingardag tann "+ fDagur + ". " + "<a target= '_blank' href="+navnToMyndir[navn] + ">Mynd</a> " + "<br/>" 
+            document.getElementById('result').innerHTML += navn + " hevur føðingardag tann "+ fDagur + ". " + "<a target= '_blank' href="+navnToMyndir[navn] + ">Mynd</a> " + "<br/>" + "<br/>"
             
             counter2 += 1
             if(counter2>=100){
@@ -2594,11 +2594,11 @@ for(var i = 0; i<personar.length;i++){
         console.log('skipped')
     }
     else{
-    document.getElementById('result').innerHTML += people[personar[i]] +" hevur føðingardag hendan dagin." +" <a target= '_blank' href="+navnToMyndir[people[personar[i]]] + ">Mynd</a> " + "<br/>" 
+    document.getElementById('result').innerHTML += people[personar[i]] +" hevur føðingardag hendan dagin." +" <a target= '_blank' href="+navnToMyndir[people[personar[i]]] + ">Mynd</a> " + "<br/>"+ "<br/>" 
     }
 }
 
-scrollTo(0,300)
+scrollTo(0,400)
 
 
 }
