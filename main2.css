@@ -80,7 +80,7 @@ body {
   margin: 0 0 var(--gutterXx) 0;
   padding: 0;
   color: #fff;
-  font-size: var(--fontSizeXx);
+  font-size: var(--fontSizeXl);
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   line-height: var(--lineHeightSm);
