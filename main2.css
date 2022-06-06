@@ -72,6 +72,7 @@ body {
 
 .Wrapper {
   margin-top: 35px;
+  margin-right:10px; 
   flex: 0 0 80%;
   max-width: 80%;
 }
