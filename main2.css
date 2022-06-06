@@ -13,7 +13,7 @@
   --fontFamily: "Dosis", sans-serif;
   --fontSizeSm: 1.2rem;
   --fontSizeMd: 2.2rem;
-  --fontSizeLg: 2.2rem;
+  --fontSizeLg: 3.0rem;
   --fontSizeXl: 4.0rem;
   --fontSizeXx: 5.6rem;
   --lineHeightSm: 1.1;
@@ -59,10 +59,15 @@ body {
   width: 100vw;
   height: auto;
   color: #455A64;
-  background-color: #57c272;
+  background-color: #04250a56;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
   line-height: var(--lineHeightMd);
+  background-image: url('https://www.lafuco.dk/sites/83YEEEEE/img/orig/aa05468a-ac16-4a7d-9593-dd6ee29832b7IMG_6614.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-blend-mode: color;
 }
 
 .Wrapper {
@@ -75,7 +80,7 @@ body {
   margin: 0 0 var(--gutterXx) 0;
   padding: 0;
   color: #fff;
-  font-size: var(--fontSizeXl);
+  font-size: var(--fontSizeXx);
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   line-height: var(--lineHeightSm);
@@ -158,9 +163,9 @@ body {
     z-index 0ms;
 }
 .final{
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
+  font-size: 2.6rem;
 }
 
 /* CSS */
@@ -203,17 +208,19 @@ body {
   transform: translateY(-2px);
 }
 
-
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
 }
 .føDagur{
-  color: #191715;
+  color: #ffffff;
   font-size: var(--fontSizeLg);
   font-family: 'Times New Roman', Times, serif;
   
 }
 .list{
-  color: #3B3B3B;
+  color: #ede5e5;
+}
+a{
+  color: antiquewhite;
 }
