@@ -2562,14 +2562,14 @@ if(userInput == ""){
 }
 var button = document.getElementById('button')
 
-console.log(navnToMyndir[userInput])
+
 var personar = []
 
 
 for (var i = 0; i < mailar.length; i++){
     if (mailar[i].slice(2,6).includes(userInput)){
         personar.push(mailar[i])
-        //console.log(mailar[i])
+        
     }
 }
 if (personar.length<1){
@@ -2591,7 +2591,7 @@ br.innerHTML = "<br/>"
 
 for(var i = 0; i<personar.length;i++){
     if(people[personar[i]] == undefined){
-        console.log('skipped')
+        
     }
     else{
     document.getElementById('result').innerHTML += people[personar[i]] +" hevur føðingardag hendan dagin." +" <a target= '_blank' href="+navnToMyndir[people[personar[i]]] + ">Mynd</a> " + "<br/>"+ "<br/>" 
