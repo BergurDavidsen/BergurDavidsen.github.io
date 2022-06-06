@@ -13,7 +13,7 @@
   --fontFamily: "Dosis", sans-serif;
   --fontSizeSm: 1.2rem;
   --fontSizeMd: 2.2rem;
-  --fontSizeLg: 3.0rem;
+  --fontSizeLg: 2.2rem;
   --fontSizeXl: 4.0rem;
   --fontSizeXx: 5.6rem;
   --lineHeightSm: 1.1;
@@ -160,7 +160,7 @@ body {
 .final{
   color: #fff;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 
 /* CSS */
