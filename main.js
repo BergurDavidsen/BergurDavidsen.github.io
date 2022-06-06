@@ -2499,7 +2499,7 @@ function birthdayToday(){
             }
             else{
                 console.log(people[x]+" hevur føðingardag ídag")
-                document.getElementById('dagligurFøDagur').innerHTML += people[x]+" hevur føðingardag ídag." +" <a target= '_blank' href="+navnToMyndir[people[x]] + ">Mynd</a> " + "<br/>" 
+                document.getElementById('dagligurFøDagur').innerHTML += people[x]+" hevur føðingardag ídag." +" <a target= '_blank' href="+navnToMyndir[people[x]] + ">Mynd</a> " + "<br/>" + "<br/>" 
             }
         }
     }
