@@ -3759,7 +3759,7 @@ function birthdayToday(){
         if(x.includes(fullDate)){
             if(people[x]==undefined){
             
-            document.getElementById('dagligurFøDagur').innerHTML = "Eingin á listanum hevur føðingardag ídag"
+            
 
             }
             else{
