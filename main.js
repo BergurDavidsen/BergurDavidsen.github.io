@@ -3854,6 +3854,7 @@ if(findObject(userInput)!=undefined){
     findItem3(userInput)
 }
 
+
 for (var i = 0; i < mailar.length; i++){
     if (mailar[i].slice(2,6).includes(userInput)){
         personar.push(mailar[i])
@@ -3886,7 +3887,9 @@ for(var i = 0; i<personar.length;i++){
     }
 }
 
-
+if(document.getElementById('result').innerHTML == ""){
+    document.getElementById('result').innerHTML = "Invalid input. Tasta okkurt annað inn."
+}
 
 
 }
