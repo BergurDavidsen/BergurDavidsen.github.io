@@ -1227,7 +1227,7 @@ let navnToMyndir = {"Aleksandra Karin Joensen": "https://tg.glasir.fo/myndasavn/
 "Hanus Undir Leitinum": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152722%7B7925B7F2-155F-4057-8C37-F8FA22BCE76F%7D.jpg",
 "Hei\u00f0run Sunad\u00f3ttir Fjallsbak": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152925%7BD8E276E6-432A-4929-822D-928BF0D93DE4%7D.jpg",
 "Janus Ludvig \u00c1rting": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152903%7B26E7BB8E-5377-4E74-8D02-6133964DA56D%7D.jpg",
-"Jens eli Ellefsen \u00f3lason": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152554%7B783E183E-8799-4AD2-B95D-D13E6C5E60AE%7D.jpg",
+"Jens Eli Ellefsen \u00f3lason": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152554%7B783E183E-8799-4AD2-B95D-D13E6C5E60AE%7D.jpg",
 "J\u00f3annes Petur \u00ed J\u00e1kupsstovu": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152710%7B93EE2D65-C613-4EFB-864E-6E64D1A24BC8%7D.jpg",
 "J\u00f3nas Debess": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152519%7BEAEB864D-2142-4A2A-B390-A04A3E203243%7D.jpg",
 "J\u00f3nas J\u00f3annisarson": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210816-152849%7B0855BB8D-E745-4468-B53C-93A2C290197C%7D.jpg",
@@ -2136,7 +2136,7 @@ let navnToMyndir = {"Aleksandra Karin Joensen": "https://tg.glasir.fo/myndasavn/
 "Brynhild P\u00e1lsd\u00f3ttir": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200820-114729%7BAFFB4A52-42B5-498E-B378-E4779E5BAF14%7D.jpg",
 "Daniella Madsen": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20190821-100724%7BD69C00F8-B2DD-435C-B3E3-10652FA391F2%7D.jpg",
 "Dj\u00f3ni Debes Isaksen": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200819-133629%7BE0F4D53D-3AA3-4CCC-A573-865187E1236F%7D.jpg",
-"D\u00f8gg J\u00f3gvansd\u00f3ttir \u00far D\u00edmun": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200819-123537%7BC36F1BEA-E76E-4BC9-A126-6FB68EE16667%7D.jpg",
+"D\u00f8gg J\u00f3gvansd\u00f3ttir \u00dar D\u00edmun": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200819-123537%7BC36F1BEA-E76E-4BC9-A126-6FB68EE16667%7D.jpg",
 "Ejvind Restorff Mouritsen": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200820-114627%7BCD4C6570-0E39-486F-A506-D88A3F1D9FBE%7D.jpg",
 "Elin \u00c1sv\u00f8r Debes": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200820-114922%7B9625782E-8573-4250-B4AA-928D476652BA%7D.jpg",
 "Elin Maria \u00d3lavsd\u00f3ttir Hansen": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200819-114441%7BCB3B4411-C4D0-4320-B600-CC82D5CAA403%7D.jpg",
@@ -2484,7 +2484,7 @@ navnToFlokkur = {   "Beinta Ellefsen": "21n",
 "Hanus Undir Leitinum": "21n",
 "Hei\u00f0run Sunad\u00f3ttir Fjallsbak": "21n",
 "Janus Ludvig \u00c1rting": "21n",
-"Jens eli Ellefsen \u00f3lason": "21n",
+"Jens Eli Ellefsen \u00f3lason": "21n",
 "J\u00f3annes Petur \u00ed J\u00e1kupsstovu": "21n",
 "J\u00f3nas Debess": "21n",
 "J\u00f3nas J\u00f3annisarson": "21n",
@@ -2633,7 +2633,7 @@ navnToFlokkur = {   "Beinta Ellefsen": "21n",
 "Hallger\u00f0 Tonysd\u00f3ttir Haraldsen": "19\u00f8",
 "Leik Holm": "19\u00f8",
 "Marna Petursd\u00f3ttir": "19\u00f8",
-"D\u00f8gg J\u00f3gvansd\u00f3ttir \u00far D\u00edmun": "20\u00f0",
+"D\u00f8gg J\u00f3gvansd\u00f3ttir \u00dar D\u00edmun": "20\u00f0",
 "Elsa Dalsgaard": "20b",
 "Eva Maria Simonsen": "20b",
 "Gu\u00f0ri\u00f0 Falkvard Joensen": "20\u00f0",
@@ -3757,19 +3757,18 @@ function birthdayToday(){
     //console.log(fullDate)
     for(let x of mailar){
         if(x.includes(fullDate)){
-            if(people[x]==undefined){
+            if(people[x] != undefined){
             
-            
-
-            }
-            else{
                 //console.log(people[x]+" hevur føðingardag ídag")
-                document.getElementById('dagligurFøDagur').innerHTML += people[x]+ ", "+ navnToFlokkur[people[x]] + ","+" hevur føðingardag ídag." +" <a target= '_blank' href="+navnToMyndir[people[x]] + ">Mynd</a> " + "<br/>" + "<br/>"
+            document.getElementById('dagligurFøDagur').innerHTML += people[x]+ ", "+ navnToFlokkur[people[x]] + ","+" hevur føðingardag ídag." +" <a target= '_blank' href="+navnToMyndir[people[x]] + ">Mynd</a> " + "<br/>" + "<br/>"
+            
             }
+            
         }
     }
     
 }
+console.log(people['dd1811x4@glasir.fo'])
 birthdayToday()
 
 function findMail(){
@@ -3811,7 +3810,7 @@ function findItem2(element){
             document.getElementById('result').innerHTML += navn +", "+navnToFlokkur[navn] +","+" hevur føðingardag tann "+ fDagur + ". " + "<a target= '_blank' href="+navnToMyndir[navn] + ">Mynd</a> " + "<br/>" + "<br/>"
             
             counter2 += 1
-            if(counter2>=100){
+            if(counter2>=130){
                 break    
             }
             
