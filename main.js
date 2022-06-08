@@ -3714,7 +3714,7 @@ navnToFlokkur = {   "Beinta Ellefsen": "21n",
 "Uni Havgr\u00edmsson Danielsen": "19n",
 "Annika \u00e1 Fl\u00f8tunum Rasmussen": "Y2033KL\u00c6",
 "Christine Anne Bernadette M": "Y2033KL\u00c6",
-"Dianne M": "Y2033KL\u00c6",
+"Dianne M. Mørkøre": "Y2033KL\u00c6",
 "D\u00f8gg Djurhuus N\u00f3nsgj\u00f3gv": "Y2033TILV",
 "Eisinbj\u00f8rg R\u00f3sa Juul": "Y2033KL\u00c6",
 "Elin R\u00f3gvad\u00f3ttir Mouritsen": "Y2033KL\u00c6",
@@ -3741,6 +3741,7 @@ navnToFlokkur = {   "Beinta Ellefsen": "21n",
 "Sarita Ranad\u00f3ttir": "20e",
 "T\u00f3ki Janusarson Str\u00f8m": "19v"}
 
+let tempArr = []
 
 
 
@@ -3768,7 +3769,7 @@ function birthdayToday(){
     }
     
 }
-console.log(people['dd1811x4@glasir.fo'])
+
 birthdayToday()
 
 function findMail(){
@@ -3777,6 +3778,21 @@ function findMail(){
 function findItem(item){
     return Object.keys(people).find(e => people[e].toLowerCase() == item.toLowerCase())
   }
+function findObject(item){
+    return Object.keys(navnToFlokkur).find(e => navnToFlokkur[e].toLowerCase() == item.toLowerCase())
+}
+function findItem3(item){
+    for(let x in navnToFlokkur){
+        var variabul = navnToFlokkur[x].toLowerCase()
+        if(variabul.includes(userInput.toLowerCase())){
+            if(variabul != undefined){
+                document.getElementById('result').innerHTML += x +". "+  "<a target= '_blank' href="+navnToMyndir[x] + ">Mynd</a> " + "<br/>" + "<br/>"
+            }
+        }
+    
+    }
+}
+
 function findItem2(element){
     counter2 = 0
     for(let x in people){
@@ -3834,6 +3850,9 @@ var button = document.getElementById('button')
 //console.log(navnToMyndir[userInput])
 var personar = []
 
+if(findObject(userInput)!=undefined){
+    findItem3(userInput)
+}
 
 for (var i = 0; i < mailar.length; i++){
     if (mailar[i].slice(2,6).includes(userInput)){
