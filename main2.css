@@ -79,7 +79,7 @@ body {
 
 .Title {
   margin: 0 0 var(--gutterXx) 0;
-  padding: 0;
+  padding: 5%;
   color: #fff;
   font-size: var(--fontSizeXl);
   font-weight: 400;
