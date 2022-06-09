@@ -1778,7 +1778,7 @@ let navnToMyndir = {"Aleksandra Karin Joensen": "https://tg.glasir.fo/myndasavn/
 "T\u00f3ra Teitsd\u00f3ttir": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20190821-141053%7B704BF283-9617-442D-8EEC-CB39346B9A9E%7D.jpg",
 "T\u00f3ra T\u00f3r\u00f0ard\u00f3ttir Johannesen": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20190821-140704%7B67AA4AC3-C22F-45D9-8994-20B31BB689F7%7D.jpg",
 "Alda Helmsdal": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210817-105527%7B4CB9C251-23E3-4192-B52E-02974FC381D4%7D.jpg",
-"Andrias A": "https://tg.glasir.fo/132n/vantar.jpg",
+"Andrias A. Nolsø": "https://tg.glasir.fo/132n/vantar.jpg",
 "Anna Marita \u00e1 R\u00f3gvi": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210817-105205%7B87861F23-B8FF-48EF-9F2C-35670C7E0A90%7D.jpg",
 "\u00c1sa Elisabeth Krog Djurhuus": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210817-105500%7B62673310-3D9B-4748-8EC1-A9C0994F789B%7D.jpg",
 "Eilin \u00ed Dali": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20210817-105447%7BF24BE931-D182-4F95-8F57-290A213593DF%7D.jpg",
@@ -3104,7 +3104,7 @@ navnToFlokkur = {   "Beinta Ellefsen": "21n",
 "T\u00f3ra Teitsd\u00f3ttir": "19\u00f0",
 "T\u00f3ra T\u00f3r\u00f0ard\u00f3ttir Johannesen": "Stak_GM",
 "Alda Helmsdal": "21x",
-"Andrias A": "21x",
+"Andrias A. Nolsø": "21x",
 "Anna Marita \u00e1 R\u00f3gvi": "21x",
 "\u00c1sa Elisabeth Krog Djurhuus": "21x",
 "Eilin \u00ed Dali": "21x",
@@ -3786,9 +3786,15 @@ function findItem3(item){
         var variabul = navnToFlokkur[x].toLowerCase()
         if(variabul.includes(userInput.toLowerCase())){
             if(variabul != undefined){
-                document.getElementById('result').innerHTML += x +". "+  "<a target= '_blank' href="+navnToMyndir[x] + ">Mynd</a> " + "<br/>" + "<br/>"
+                if(findItem(x) != undefined){
+                    var dato = findItem(x).slice(2,4)+"/"+findItem(x).slice(4,6)
+                    document.getElementById('result').innerHTML += x +" hevur føðingardag tann " +dato+". "+  "<a target= '_blank' href="+navnToMyndir[x] + ">Mynd</a> " + "<br/>" + "<br/>"
+            
             }
+        }else{
+            document.getElementById('result').innerHTML+= x + ". "+  "<a target= '_blank' href="+navnToMyndir[x] + ">Mynd</a> " + "<br/>" + "<br/>"
         }
+    }
     
     }
 }
