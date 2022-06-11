@@ -3748,13 +3748,18 @@ let tempArr = []
 //console.log(navnToFlokkur['Bergur Davidsen'])
 function birthdayToday(){
     var date = new Date()
-    month = date.getMonth()+1
+    var month = date.getMonth()+1
     if(month<10){
-        month = "0"+month
+        var month = "0"+month
         }
     day = date.getDate()
-    fullDate = "0"+day+month
-    
+    if(day<10){
+        var fullDate = "0"+day+month
+    }
+    else{
+        var fullDate=day+month
+    }
+
     //console.log(fullDate)
     for(let x of mailar){
         if(x.includes(fullDate)){
