@@ -2474,8 +2474,8 @@ let navnToMyndir = {"Aleksandra Karin Joensen": "https://tg.glasir.fo/myndasavn/
 "Ronja Gar\u00f0arsd\u00f3ttir Justinussen": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200819-120323%7BACECE268-06B3-4B0B-9468-A60C79C00559%7D.jpg",
 "Sarita Ranad\u00f3ttir": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200820-115625%7BBF1773C6-5F18-4D66-B133-28080F64C427%7D.jpg",
 "T\u00f3ki Janusarson Str\u00f8m": "https://tg.glasir.fo/myndasavn/savn/einstaklingar/20190821-105546%7BC617F8E3-91DE-4280-8F5F-0A7CB4FD9847%7D.jpg",
-"Yngva Lamhauge": "https://tg.glasir.fo/132n/vantar.jpg"}
-
+"Yngva Lamhauge": "https://tg.glasir.fo/132n/vantar.jpg",
+"Ingrid Jacobsen":"https://tg.glasir.fo/myndasavn/savn/einstaklingar/20200819-115205%7BFB4980F7-8A22-4247-BABC-923985BEFBE5%7D.jpg"}
 navnToFlokkur = {   "Beinta Ellefsen": "21n",
 "Birita Madsen": "21n",
 "Brandur Reynstind": "21n",
