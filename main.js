@@ -3839,9 +3839,7 @@ var mailar = [
                 //console.log(navn)   
                 document.getElementById('result').innerHTML += navn +", "+navnToFlokkur[navn] +","+" hevur føðingardag tann "+ fDagur + ". " + "<a target= '_blank' href="+navnToMyndir[navn] + ">Mynd</a> " + "<br/>" + "<br/>"
                 
-                if("bjørn krogh".includes(userInput.toLowerCase())){
-                   document.getElementById('result').innerHTML += "Bjørn Krogh, "+navnToFlokkur["Bjørn Krogh"] +","+ " hevur føðingardag tann "+ "06/02" + ". " + "<a target= '_blank' href="+navnToMyndir["Bjørn Krogh"] + ">Mynd</a> " + "<br/>" + "<br/>"
-                }
+                
                 counter2 += 1
                 if(counter2>=130){
                     break    
@@ -3851,6 +3849,9 @@ var mailar = [
     
                 
             }
+            if("bjørn krogh".includes(userInput.toLowerCase())){
+                document.getElementById('result').innerHTML += "Bjørn Krogh, "+navnToFlokkur["Bjørn Krogh"] +","+ " hevur føðingardag tann "+ "06/02" + ". " + "<a target= '_blank' href="+navnToMyndir["Bjørn Krogh"] + ">Mynd</a> " + "<br/>" + "<br/>"
+             }
         }
     
     
@@ -3902,7 +3903,7 @@ var mailar = [
         else{
         document.getElementById('result').innerHTML += people[personar[i]] +", "+ navnToFlokkur[people[personar[i]]] + ","+" hevur føðingardag hendan dagin." +" <a target= '_blank' href="+navnToMyndir[people[personar[i]]] + ">Mynd</a> " + "<br/>" + "<br/>"
         if(userInput=="0602"){
-        document.getElementById('result').innerHTML += "Hendan dagin hevur Bjørn Krogh, "+navnToFlokkur["Bjørn Krogh"]+", Føðingardag. "+" <a target= '_blank' href="+navnToMyndir["Bjørn Krogh"] + ">Mynd</a> " + "<br/>" + "<br/>"}
+        document.getElementById('result').innerHTML += "Hendan dagin hevur Bjørn Krogh, "+navnToFlokkur["Bjørn Krogh"]+", føðingardag. "+" <a target= '_blank' href="+navnToMyndir["Bjørn Krogh"] + ">Mynd</a> " + "<br/>" + "<br/>"}
         }
         
     }
