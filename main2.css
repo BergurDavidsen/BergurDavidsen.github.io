@@ -72,7 +72,6 @@ body {
 
 .Wrapper {
   margin-top: 35px;
-  margin-right:10px; 
   flex: 0 0 80%;
   max-width: 80%;
 }
@@ -81,12 +80,17 @@ body {
   margin: 0 0 var(--gutterXx) 0;
   padding: 5%;
   color: #fff;
-  font-size: var(--fontSizeXl);
+  font-size: var(--fontSizeXx);
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   line-height: var(--lineHeightSm);
   text-align: center;
   text-shadow: -0.1rem 0.1rem 0.2rem var(--colorPrimary800);
+}
+
+.info{
+  color: #76ea82;
+  font-size: 2.2rem;
 }
 .text{
   font-family:'Times New Roman', Times, serif;
