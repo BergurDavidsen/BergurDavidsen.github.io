@@ -80,13 +80,14 @@ body {
   margin: 0 0 var(--gutterXx) 0;
   padding: 5%;
   color: #fff;
-  font-size: var(--fontSizeXx);
+  font-size: 4.7rem;
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   line-height: var(--lineHeightSm);
   text-align: center;
   text-shadow: -0.1rem 0.1rem 0.2rem var(--colorPrimary800);
 }
+
 
 .info{
   color: #76ea82;
